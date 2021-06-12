@@ -1,0 +1,252 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+html,body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.timebtn{
+    padding: 18px;
+    color: white;
+    background: radial-gradient(rgb(204, 133, 133), rgb(241, 50, 82));
+    margin-left: 300px;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 20px;
+    isolation: isolate;
+}
+.fori {
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.box {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    position: relative;
+    margin: 70px 40px;
+    margin-left: 170px;
+    width: 700px;
+    height: 60px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: radial-gradient(rgb(218, 171, 171), rgb(241, 50, 82));
+}
+.fori {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+}
+.search {
+    background: linear-gradient(rgb(233, 34, 240), rgb(116, 17, 182));
+    color: white;
+}
+.search:hover {
+    background: rgb(11, 11, 114);
+}
+@media screen and (max-width: 770px) {
+    .box{
+        width: 100%;
+    }
+    .fori{
+        flex-basis: 100%;
+    }
+}   
+/* world tour */
+#tourplans {
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.tour-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service {
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding: 12px;
+    color: white;
+    position: relative;
+}
+.single-service img {
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    border-radius: 7px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #e22626d5);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay {
+    opacity: 1;
+}
+
+.tour-desc {
+    width: 80%;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+    padding: 5px;
+}
+hr {
+    background: white;
+    width: 60%;
+}
+.single-service:hover .tour-desc {
+    bottom: 40%;
+    opacity: 1;
+}
+.button {
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 7px;
+    background: linear-gradient(rgb(233, 34, 240), rgb(115, 11, 184));
+}
+
+.button:hover {
+    background: linear-gradient(rgb(233, 34, 240), rgb(51, 20, 228));
+
+}
+@media screen and (max-width: 770px) {
+    .single-service img{
+        width: 100%;
+    }
+    .single-service{
+        flex-basis: 100%;
+    }
+    .indiatours{
+        justify-content: center;
+        font-size: 12px;
+    }
+}
+/* indian tour */
+#packages {
+    height: 800px;
+    
+}
+.indiatours p {
+    margin-left: 550px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #e22626d5;
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    justify-content: center;
+}
+
+.indiatours p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#e22626d5, white);
+    top: -20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transform: (10deg);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+
+}
+.darkmode--activated .indiatours p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#e22626d5, rgb(17, 17, 17));
+    top: -20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transform: (10deg);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+
+}
+.kerala {
+    display: flex;
+    margin-top: 60px;
+}
+.pic1 img{
+    flex-basis: 30%;
+    width: 350px;
+    height: 250px;
+    
+}
+.infotext {
+    flex-basis: 45%;
+    padding: 20px;
+}
+.details{
+    flex-basis: 25%;
+    padding: 30px;
+   letter-spacing: 1px;
+}
+.details i{
+    padding: 10px;
+}
+.enquire{
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    color: black;
+    background-color: yellow;
+    border: 1px solid grey;
+    isolation: isolate;
+}
+.enquire:hover{
+    background-color: rgb(232, 235, 74);
+
+}
+#footer-booking{
+    height: 400px;
+    bottom: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.footer{
+    background: rgb(59, 52, 52);
+    color: white;
+    position: relative;
+    bottom: 70px;
+    overflow: visible;
+}
+.footer .footer-bottom{
+    background: rgb(59, 52, 52);
+    color: white;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: -1470px;
+    left: 0px;
+    padding-top: 100px;
+}

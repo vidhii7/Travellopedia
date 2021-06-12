@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        /* background: linear-gradient(rgb(233, 34, 240), rgb(116, 17, 182)); */
+        background: url(loneye.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width: 350px;
+        height: 500px;
+        margin: 7% auto;
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.1);
+        /* background-color:black;
+        opacity: 0.5; */
+        box-shadow: 0 0 20px rgb(47, 175, 226);
+    }
+    .header{
+        text-align: center;
+        padding-top: 6px;
+    }
+    .header h1{
+        color: white;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .main{
+        text-align: center;
+        color: white;
+    }
+    .main input{
+        color: white;
+        width: 175px;
+        height: 45px;
+    
+        background: transparent;
+        border-bottom: 4px solid rgb(96, 245, 59);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        padding-left: 38px;
+        /* box-sizing: border-box; */
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .main button{
+        width: 100px;
+        padding-left: 0;
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.1);
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .main button:hover{
+        box-shadow: 2px 2px 5px white;
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .main input:hover{
+        box-shadow: 2px 2px 5px white;
+        /* border-radius: 25px; */
+        background-color: rgba(0,0,0,0.1);
+    }
+    .main span{
+        position: relative;
+    }
+    .main i{
+     position: absolute;
+     color: white;
+     left: 15px;
+     top: 2px;
+     font-size: 16px;
+    }
+    .col{
+        color: white;
+        padding: 10px;
+    }
+   .line{
+       font-size: 20px;
+   }
+   .signin {
+       font-size: 20px;
+       width: 80px;
+       color: white;
+       text-decoration: none;
+    }
+    .signin:hover{
+        color: grey;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sign In</h1>
+        </div>
+        <div class="main">
+            <form>
+                <span>
+                    <input type="" placeholder="Name">
+                </span><br>
+                <span>
+                <input type="email" placeholder="E Mail">
+                </span><br>
+                <span>
+                    <input type="password" placeholder="Password">
+                    </span><br>
+                <span>
+                <input type="password" placeholder="Confirm Password">
+                </span><br>
+                <button class="col">
+                 Sign In
+                </button><br>
+                <div class="line">
+                Already have an account? &#x2192;<a class="signin" href="login.html">Login</a>
+                </div>
+          </form>
+        </div>
+        
+    </div>
+
+</body>
+</html>
