@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(rgb(233, 34, 240), rgb(116, 17, 182));
+        background-repeat: no-repeat;
+    }
+    .container{
+        width: 300px;
+        height: 450px;
+        margin: 7% auto;
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.1);
+        /* background-color:black;
+        opacity: 0.5; */
+        box-shadow: 0 0 20px rgb(47, 175, 226);
+    }
+    .header{
+        text-align: center;
+        padding-top: 75px;
+    }
+    .header h1{
+        color: white;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .main{
+        text-align: center;
+    }
+    .main input,button{
+        width: 175px;
+        height: 45px;
+        border-radius: 25px;
+        background: rgba(0,0,0,0.1);
+        border: none;
+        outline: none;
+        padding-left: 38px;
+        box-sizing: border-box;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .main button{
+        width: 100px;
+        padding-left: 0;
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.1);
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 70px;
+    }
+    .main button:hover{
+        box-shadow: 2px 2px 5px white;
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .main input:hover{
+        box-shadow: 2px 2px 5px white;
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .main span{
+        position: relative;
+    }
+    .main i{
+     position: absolute;
+     color: white;
+     left: 15px;
+     top: 2px;
+     font-size: 16px;
+    }
+    .col{
+        color: white;
+    }
+   .line{
+       font-size: 20px;
+   }
+   .signin {
+       font-size: 20px;
+       width: 80px;
+       color: black;
+       text-decoration: none;
+    }
+    .signin:hover{
+        color: white;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+        </div>
+        <div class="main">
+            <form>
+                <span>
+                    <input type="" placeholder="Username">
+                </span><br>
+                <span>
+                <input type="password" placeholder="Password">
+                </span><br>
+                <button class="col">
+                 Login
+                </button><br>
+                <div class="line">
+                Creat Account &#x2192;<a class="signin" href="sign.html">Sign Up</a>
+                </div>
+          </form>
+        </div>
+        
+    </div>
+
+</body>
+</html>
